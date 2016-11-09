@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.manol_000.musicplayer.MainActivity">
+
+    <Button
+        android:text="Click to start music service!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStart"
+        android:layout_above="@+id/buttonStart2"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:text="Click to start music in app!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStart2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/time"
+        android:inputType="phone"
+        android:hint="Number of Seconds"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/counterButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Counter"
+        android:onClick="startAlert"
+        android:id="@+id/counterButton"
+        android:layout_below="@+id/time"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
